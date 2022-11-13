@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Fading Method</title>
+</head>
+
+<body>
+    <!--
+Fading Methods
+With jQuery you can fade an element in and out of visibility.
+jQuery has the following fade methods:
+
+fadeOut()
+fadeIn()
+fadeToggle()
+
+-->
+
+    <p>Demonstrate fadeToggle() with different speed parameters.</p>
+
+
+    <div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+    <br>
+
+    <button id="btn1">Click to fade out boxes</button><br><br>
+    <button id="btn2">Click to fade in boxes</button><br><br>
+
+
+    <div id="div2" style="width:80px;height:80px;background-color:green;"></div> <br>
+    <button id="btn3">Click to toggle fade in/out boxes</button><br><br>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#btn1").click(function () {
+                $("#div1").fadeOut(3000);
+            })
+
+            $("#btn2").click(function () {
+                $("#div1").fadeIn(3000);
+            })
+
+            $("#btn3").click(function () {
+                $("#div2").fadeToggle(3000);
+            })
+        })
+    </script>
+
+</body>
+
+</html>
